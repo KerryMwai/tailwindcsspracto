@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body class="text-gray-600 font-mono">
+    <div class=""> <!--content wrapper  -->
+        <div class="grid md:grid-cols-3">
+            <div class="flex justify-end">
+            <nav class="md:col-span-1 text-right "><!-- navigation bar -->
+                <div class="">
+                    <h1 class="border-b border-grey-100 py-2 bg-red-400 text-green-700">
+                        
+                        <a href="/" class="font-bold uppercase hover:text-gray-800">Food You</a>
+                    </h1>
+                </div>
+                <ul>
+                    <li class="text-gray-700 font-bold p-4">
+                        <a href="#">
+                            <i class="fas fa-home"></i><span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-servicestack"></i><span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-question"></i><span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>   <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <!--end of navigation bar -->
+            <!-- main section -->
+            <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+                <div class="flex justify-center md:justify-end">
+                    <a href="#" class="text-red-700 font-bold md:border-2 
+                    border-red-700 uppercase  p-2 rounded-full cursor-ponter tracking-wider hover:bg-red-400 hover:text-white hover:border hover:shadow-inner transition ease-out duration-500">Login in</a>
+                    <a href="#" class="text-red-700 font-bold md:border-2 
+                    border-red-700 uppercase  p-2 rounded-full ml-2 cursor-ponter tracking-wider hover:bg-red-400 hover:text-white hover:border hover:shadow-inner transition ease-out duration-500">Login out</a>
+                </div>
+                <header>
+                    <h2 class='text-6xl text-green-700 font-semibold'>Recipies</h2>
+                    <h3 class='text-2xl text-green-500 font-semibold'>Best meals</h3>
+                </header>
+                <div>
+                    <div>
+                        <h2 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipies</h2>
+                        <div class="mt-8  grid lg:grid-cols-3 gap-10 ">
+                            <!-- cards go here -->
+                            <div class="bg-white rounded shadow-md overflow-hidden relative">
+                                <img src="data:image/jpeg;base64,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" alt="" 
+                                class="rounded w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4 ">
+                                    <span class="text-secondary font-bold">Recipe 45</span>
+                                    <span class="block text-gray-500 text-sm">For Kerry Wangamati</span>
+                                </div>
+                                <div class="bg-gray-600 text-white font-bold uppercase text-xs rounded-full p-2 absolute top-0">
+                                    <i class="fas fa-clock"></i>
+                                    <span>25 Mins</span>
+                                </div>
+                                <div>
+                                    <div class="bg-gray-500 flex justify-center py-2">
+                                        Load More Recipies
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded shadow-md overflow-hidden relative">
+                                <img src="/src/img/12.jfif" alt="" 
+                                class="rounded w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4 ">
+                                    <span class="text-secondary font-bold">Recipe 45</span>
+                                    <span class="block text-gray-500 text-sm">For Kerry Wangamati</span>
+                                </div>
+                                <div class="bg-gray-600 text-white font-bold uppercase text-xs rounded-full p-2 absolute top-0">
+                                    25 Mins
+                                </div>
+                                <div>
+                                    <div class="bg-gray-500 flex justify-center py-2">
+                                        Load More Recipies
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded shadow-md overflow-hidden relative">
+                                <img src="/src/img/20.jfif" alt="" 
+                                class="rounded w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4 ">
+                                    <span class="text-secondary font-bold">Recipe 45</span>
+                                    <span class="block text-gray-500 text-sm">For Kerry Wangamati</span>
+                                </div>
+                                <div class="bg-gray-600 text-white font-bold uppercase text-xs rounded-full p-2 absolute top-0">
+                                    <i class="fas fa-clock"></i>
+                                    <span>25 Mins</span>
+                                </div>
+                                <div>
+                                    <div class="bg-gray-500 flex justify-center py-2">
+                                        Load More Recipies
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded shadow-md overflow-hidden relative">
+                                <img src="/src/img/23.jfif" alt="" 
+                                class="rounded w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4 ">
+                                    <span class="text-secondary font-bold">Recipe 45</span>
+                                    <span class="block text-gray-500 text-sm">For Kerry Wangamati</span>
+                                </div>
+                                <div class="bg-gray-600 text-white font-bold uppercase text-xs rounded-full p-2 absolute top-0">
+                                    <i class="fas fa-clock"></i>
+                                    <span>25 Mins</span>
+                                </div>
+                                <div>
+                                    <div class="bg-gray-500 flex justify-center py-2">
+                                        Load More Recipies
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded shadow-md overflow-hidden relative">
+                                <img src="/src/img/29.jfif" alt="" 
+                                class="rounded w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4 ">
+                                    <span class="text-secondary font-bold">Recipe 45</span>
+                                    <span class="block text-gray-500 text-sm">For Kerry Wangamati</span>
+                                </div>
+                                <div class="bg-gray-600 text-white font-bold uppercase text-xs rounded-full p-2 absolute top-0">
+                                    <i class="fas fa-clock"></i>
+                                    <span>25 Mins</span>
+                                </div>
+                                <div>
+                                    <div class="bg-gray-500 flex justify-center py-2">
+                                        Load More Recipies
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <button class="w-48 bg-gray-400 rounded-full border-2 border-green-700 uppercase transform hover:scale-125 hover:bg-opacity-30 my-8 transition ease-out duration-400">register</button>
+                    </div>
+                </div>
+            </main>
+<!-- end of main section -->
+        </div>
+    </div>
+</body>
+</html>
